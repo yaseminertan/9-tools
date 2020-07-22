@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p style="color:red">Hi!</p>
+    </div>
+</body>
+<script>
+    const arr=[{user:"User1", phone:1111}, {user:"User2",phone:2222}];
+    // Regular
+        console.log("Regular usage!");
+
+    // Interpolated
+        console.log("Interpolated log : %s","interpolate");
+    // Styled
+        console.log("%c styled text","font-size:16px; color:blue;");
+
+    // warning!
+        console.warn("Hot Warn!!");
+
+    // Error :|
+        console.error("OMG! What's the error?");
+
+    // Info
+        console.info("Info Info Info");
+
+    // Testing
+        const paragraph=document.querySelector("p");
+        console.assert(paragraph.style.color=="blue");
+
+    // clearing
+        //console.clear();
+
+    // Viewing DOM Elements
+        console.log(paragraph);
+        console.dir(paragraph);
+
+    // Grouping together
+        arr.forEach(a => {
+            console.groupCollapsed(`${a.user}`);
+            console.log(`${a.user} - ${a.phone}`);
+            console.groupEnd(`${a.user}`);
+        });
+
+    // counting
+
+    // timing
+</script>
+</html>

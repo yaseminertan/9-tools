@@ -48,7 +48,16 @@
         });
 
     // counting
+        arr.forEach(a => {
+            console.count(`${a.user}`);
+        });
 
     // timing
+        console.time('count');
+        arr.forEach(a => {
+            console.count(`${a.user}`);
+        });
+        console.timeEnd('count');
+
 </script>
 </html>
